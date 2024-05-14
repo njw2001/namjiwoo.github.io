@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><img src="images/멋쟁이사자처럼.jpg">정신나간 노트앱~~</h1>
+        <h2>메모하고, 정신머리 두고오지 마세요~~</h2>
+        <input id="search-text" class="search" type="text" placeholder="Search" onkeyup="filter()">
+        <button id="create-note" class="btn"><img src="images/오랑우탄.jpg">노트 만들기</button>
+        <template id="note-template">
+            <div class="note">
+                <h3 class="note-title"></h3>
+                    <p class="note-body"></p>
+                    <p class="note-date"></p>
+                    <button class="remove-note">Remove Note</button>
+            </div>
+        </template>
+        <div id="notes"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
